@@ -9,14 +9,14 @@
         "tareas": [
             {
                 "titulo": "Mirar apuntes php",
-                "descripci\u00f3n": "",
+                "descripcion": "",
                 "estado": "Pendiente",
                 "hora_inicio": "2023-01-11T19:00:00.000Z",
                 "hora_fin": "2023-01-11T19:00:00.000Z"
             },
             {
                 "titulo": "Comprar pan",
-                "descripci\u00f3n": "",
+                "descripcion": "",
                 "estado": "Pendiente",
                 "hora_inicio": "2023-01-11T19:00:00.000Z",
                 "hora_fin": "2023-01-11T19:00:00.000Z"
@@ -33,14 +33,14 @@
         "tareas": [
             {
                 "titulo": "Beber agua",
-                "descripci\u00f3n": "",
+                "descripcion": "",
                 "estado": "A medias",
                 "hora_inicio": "2023-01-11T19:00:00.000Z",
                 "hora_fin": "2023-01-11T19:00:00.000Z"
             },
             {
                 "titulo": "Bailar chachacha",
-                "descripci\u00f3n": "",
+                "descripcion": "",
                 "estado": "",
                 "hora_inicio": "2023-01-11T19:00:00.000Z",
                 "hora_fin": "2023-01-11T19:00:00.000Z"
