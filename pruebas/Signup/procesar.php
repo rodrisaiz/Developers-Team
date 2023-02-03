@@ -15,6 +15,6 @@
     
     $signup1 = new Signup();
     
-    print_r($signup1->addDataUser($name, $surname, $userName, $email, $pw));
+    print_r($signup1->addUser($name, $surname, $userName, $email, $pw));
 
 ?>

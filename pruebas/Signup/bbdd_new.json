@@ -100,5 +100,14 @@
         "email": "rodrisaiz@email.com",
         "pw": "6666",
         "tareas": []
+    },
+    {
+        "id_user": 9,
+        "name": "asdas",
+        "surname": "asdad",
+        "userName": "dcfgdg",
+        "email": "dffgbfg",
+        "pw": "1234",
+        "tareas": []
     }
 ]

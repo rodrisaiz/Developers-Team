@@ -18,7 +18,7 @@
         public $hora_fin;
 
 
-        function addDataUser($name, $surname, $userName, $email, $pw)
+        function addUser($name, $surname, $userName, $email, $pw)
         {
 
             //Obtengo los datos de la bbdd del archivo json y lo decodifico como un array
