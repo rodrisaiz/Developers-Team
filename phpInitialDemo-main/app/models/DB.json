@@ -35,7 +35,7 @@
             "pw": "5678",
             "tareas": [
                 {
-                    "id_tarea": "4",
+                    "id_tarea": "1",
                     "titulo": "Beber agua",
                     "descripción": "",
                     "estado":"A medias",
@@ -43,7 +43,7 @@
                     "hora_fin": "2023-01-11T19:00:00.000Z"
                 },
                 {
-                    "id_tarea": "5",
+                    "id_tarea": "2",
                     "titulo": "Bailar chachacha",
                     "descripción": "",
                     "estado":"Finalizado",
