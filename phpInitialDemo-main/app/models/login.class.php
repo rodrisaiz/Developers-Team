@@ -1,116 +1,79 @@
 <?php
-
-
+require("DB.class.php");
 
 class Login extends DB{
  
 
 
-    //public $username = $_POST["user"]
-    public $username = "usuario";
-    public $pw = "1234";
-    public $variables; 
-    public $variables2; 
-    public $user; 
-    public $pasword;
-    public $pasword1;  
-    public $result; 
-    public $contador = -1; 
-
-
-
-
-
-    public function userComprobation(){
-
-        foreach($this->read() as $variables ){  
-
-            $this->user = $variables['user']; 
-
-            $this->contador = $this->contador + 1;
-            
-            if ($this->username == $this->user){
-
-                    $this->result = "Lo has logrado!!!!!!" . $this->contador;
-
-                }else{
-
-                    $this->result = "NO lo has logrado";
-
-                }        
-        }
-
-        return $this->result;
-    }
-
-
-
-
-
-public function pwComprobation(){
-
-    //foreach($this->read() as $variables ){  
-
-        $this->pasword1 = $this->read()[$this->contador ]; 
-
-                
-            $this->pasword = $this->pasword1['pw']; 
+        //public $username = $_POST["user"]
         
-        if ($this->pasword == $this->pwd){
-        //hasta aca funciona 
-            $this->result = "Lo has logrado!!!!!!";
+        public $username = "usuario";
+        public $pw = "2222";
+        
+        public $dataUser; 
+        public $user; 
+        public $gate = 0; 
+        public $contador = -1;
+        public $result; 
+        public $pasword;
+        public $paswordUser;  
+        
+       
+            public function userComprobation(){
 
-            }else{
+                foreach($this->read() as $this->dataUser){
+                    
+                    $this->user = $this->dataUser['userName'];
+                    
+                    if($this->gate != 1){ 
 
-            $this->result = "NO lo has logrado";
+                        $this->contador = $this->contador + 1;
+                        
+                        if ($this->user === $this->username){
 
-            }
+                            $this->result = true;
+                            $this->gate = 1;
+                                
+                        }else{
 
-            return $this->result;
+                            $this->result = "Header signup";
+                            $this->gate  = 0;
 
-    
+                        }      
+                    } 
+                }
 
-}
-}
-
-
-
-     /*   foreach($this->read() as $variables2 ){
-
-            $this->pasword = $variables2['user'][$this->user];
-
-
-            if ($this->pasword == $this->$pwd ){
-
-                echo "Lo has logrado!!!!!!";
-
-
-            }else{
-
+                return $this->result;
             
-
-            echo "NO lo has logrado";
-
-        }
-    }
-
-/*
-
-        foreach($users as $user) {
-            $name = $user['name']; 
-            $surname = $user['surname'];
-            $tareas = $user['tareas'];
-            foreach($tareas as $tarea) {
-                echo $name.' tienes que '. $tarea['titulo'].' esta tarea está '.$tarea['estado'].'.<br>';
             }
-        }
-
-        return $this->variable;
-    }
-*/
 
 
 
+            public function pwComprobation(){
+
+                foreach($this->read() as $variables ){  
+
+                    $this->paswordUser = $this->read()[$this->contador]; 
+
+                    $this->pasword = $this->paswordUser['pw']; 
+                    
+                    if ($this->pasword == $this->pw){
+                       
+                        $this->result = true;
+
+                    }else{
+
+                        $this->result = "NO lo has logrado";
+
+                    }
+
+                    return $this->result;
+                
+                }
+            }
+
+
+}
 
 ?>
 
@@ -120,6 +83,8 @@ public function pwComprobation(){
 
 $objet1 = new Login();
 
+
+//var_dump($objet1->read());
 echo $objet1->userComprobation();
 echo $objet1->pwComprobation();
 
