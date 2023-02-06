@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php 
+<?php //require("../../../app/models/login.class.php"); 
 
 
 ?>
@@ -18,9 +18,9 @@
     <div class="index-login-loguin">
             <h4>LOGIN</h4>
             <P>Don't have an account yet? Sing up here!</P>
-            <form action="/web/login" method="POST">       
+            <form action= <?php //$this->login(); ?> method="POST">
                 <input type="text" name="username" placeholder="Username">
-                <input type="password" name="pw" placeholder="Password">
+                <input type="password" name="pwd" placeholder="Password">
                 <br>
                 <button type="submit" name="submit">LOG IN</button>
             </form>

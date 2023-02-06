@@ -2,13 +2,13 @@
 
 class HomeController extends ApplicationController
 {
-	public function indexAction()
+	public function homeAction()
 	{
 		
 	}
 	
 	public function checkAction()
 	{
-		
+		$this->view->message =  "hello from test::check";
 	}
 }
