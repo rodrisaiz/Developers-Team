@@ -122,20 +122,3 @@ class Login extends DB{
 
 ?>
 
-<?php
-
-/*
-
-$objet1 = new Login();
-
-
-//var_dump($objet1->read());
-//echo $objet1->userComprobation();
-//echo $objet1->pwComprobation();
-
-echo $objet1->otraAction();
-
-
-//print_r($objet1->$this->read());
-*/
-?>
