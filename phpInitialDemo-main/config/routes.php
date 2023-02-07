@@ -10,12 +10,17 @@
  * '/calendar' => 'calendar#index'
  */
 $routes = array(
-	'/test' => 'test#index',
-	'/rodri' => 'rodri#index',
 	'/' => 'login#index',
-	'/home' => 'home#index',
-	'/newuser' => 'newUser#index',
-	'/task' => 'task#index'
+	'/loginerror' => 'login#error',
+	'/login' => 'login#login',
+	'/signuphome' => 'signup#index',
+	'/signup' => 'signup#signup',
+	'/home' => 'home#home',
+	'/task' => 'general#task',
+// the following are just test
+	'/test' => 'test#index',
+	'/testa' => 'test#check',
+	'/rodri' => 'rodri#index'
 
 
 );
