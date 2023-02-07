@@ -109,5 +109,14 @@
         "email": "dffgbfg",
         "pw": "1234",
         "tareas": []
+    },
+    {
+        "id_user": 10,
+        "name": "Pepito",
+        "surname": "Grillo",
+        "userName": "pepitogrillo",
+        "email": "pgrillo@email.com",
+        "pw": "1234",
+        "tareas": []
     }
 ]
