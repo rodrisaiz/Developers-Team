@@ -8,70 +8,53 @@
         public $datoUser = 'name';
         public $datoTarea = 'titulo';
 
-
-
-
         public function usuarios()
         {
-
             $this->data = $this->read();
+            echo '<br>';
+            var_dump($this->data);
 
-        echo '<br>';
-                var_dump($this->data);
-        echo '<br><br>';
         }
         public function usuario()
         {
-
             $this->data = $this->read()[$this->posicionUser]; 
             echo '<br><br>';
-                var_dump($this->data);
-                echo '<br><br>';
+            var_dump($this->data);
+
         }
         
         public function tareasUsuario()
         {
-
-            $this->data = $this->read()[$this->posicionUser]; 
-
-                echo '<br><br>';
-                var_dump($this->data['tareas']);
-                echo '<br><br>';
+            $this->data = $this->read()[$this->posicionUser]['tareas']; 
+            echo '<br><br>';
+            var_dump($this->data);
         }
 
 
         public function datoUsuario()
         {
-
-            $this->data = $this->read()[$this->posicionUser]; 
-                echo '<br><br>';               
-                var_dump($this->data[$this->datoUser]);
-                echo '<br><br>';
-
+            $this->data = $this->read()[$this->posicionUser][$this->datoUser]; 
+            echo '<br><br>';               
+            var_dump($this->data);
 
         }
 
 
         public function tarea()
         {
-
-            $this->data = $this->read()[$this->posicionUser]; 
-                
-                echo '<br><br>';
-                var_dump($this->data['tareas'][$this->posicionTarea]);
-                echo '<br><br>';
+            $this->data = $this->read()[$this->posicionUser]['tareas'][$this->posicionTarea];
+            echo '<br><br>';
+            var_dump($this->data);
         }
 
 
         public function datoTarea()
         {
-
-            $this->data = $this->read()[$this->posicionUser];  
-                
-            var_dump($this->data['tareas'][$this->posicionTarea][$this->datoTarea]);
+            $this->data = $this->read()[$this->posicionUser]['tareas'][$this->posicionTarea][$this->datoTarea];  
+            echo '<br><br>';    
+            var_dump($this->data);
 
         }
-
 
     }
 
@@ -80,9 +63,8 @@
 <?php   
 
         $object = new VerData();
-
+        
         $object->usuarios();
-
         $object->usuario();
         $object->datoUsuario();
         $object->tareasUsuario();
@@ -90,4 +72,3 @@
         $object->datoTarea();
 
 ?>
-
