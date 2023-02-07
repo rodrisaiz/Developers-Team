@@ -21,6 +21,4 @@ $routes = array(
 	'/test' => 'test#index',
 	'/testa' => 'test#check',
 	'/rodri' => 'rodri#index'
-
-
 );
