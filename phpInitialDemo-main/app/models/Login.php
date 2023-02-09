@@ -97,6 +97,14 @@ class Login extends DB{
 
             }
 
+            public function sessionStart(){
+
+                session_start();
+
+                $_SESSION["userPosition"] = $this->contador;
+
+            }
+
 
             public function LoginAction(){
 
@@ -113,6 +121,7 @@ class Login extends DB{
                         $this->result = header('Location:/web/signuphome');
                     
                     }
+                    $this->sessionStart();
 
                     return $this->result;
                 
