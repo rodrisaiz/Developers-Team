@@ -17,6 +17,8 @@ $routes = array(
 	'/signup' => 'signup#signup',
 	'/home' => 'home#home',
 	'/task' => 'general#task',
+	'/taskup' => 'taskup#taskup',
+	'/taskuphome' => 'taskup#index',
 // the following are just test
 	'/test' => 'test#index',
 	'/testa' => 'test#check',
