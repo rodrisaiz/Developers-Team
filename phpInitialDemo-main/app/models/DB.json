@@ -81,7 +81,15 @@
         "userName": "asddsfssdfscd",
         "email": "vc zxczxdfsdggzx",
         "pw": "zxccx",
-        "tareas": []
+        "tareas": [
+            {
+                "titulo": "sdfdsf",
+                "descripcion": "sdfsdf",
+                "estado": "sdfsdfsfd",
+                "hora_inicio": "2023-03-03T15:14",
+                "hora_fin": "2023-02-17T10:14"
+            }
+        ]
     },
     {
         "id_user": 7,
