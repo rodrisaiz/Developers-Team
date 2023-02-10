@@ -10,6 +10,7 @@
  * '/calendar' => 'calendar#index'
  */
 $routes = array(
+
 	'/' => 'login#index',
 	'/loginerror' => 'login#error',
 	'/login' => 'login#login',
@@ -19,8 +20,14 @@ $routes = array(
 	'/task' => 'general#task',
 	'/taskup' => 'taskup#taskup',
 	'/taskuphome' => 'taskup#index',
+
+
+
 // the following are just test
 	'/test' => 'test#index',
 	'/testa' => 'test#check',
 	'/rodri' => 'rodri#index'
+
 );
+
+?>
