@@ -88,6 +88,13 @@
                 "estado": "sdfsdfsfd",
                 "hora_inicio": "2023-03-03T15:14",
                 "hora_fin": "2023-02-17T10:14"
+            },
+            {
+                "titulo": "sdfsdfsdf",
+                "descripcion": "sdfsfd",
+                "estado": "sdfsf",
+                "hora_inicio": "2023-02-10T21:49",
+                "hora_fin": "2023-02-15T18:49"
             }
         ]
     },
