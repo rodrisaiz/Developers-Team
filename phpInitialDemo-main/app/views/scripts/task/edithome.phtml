@@ -5,9 +5,10 @@
 
 <?php include ROOT_PATH.'/app/views/layouts/header.php';?>
 
+<!-- 
   <body>
     <form action="/web/taskedit" method="POST">
-    Titulo:<input name="newtitulo" type="text" placeholder=<?php echo $user['titulo'];?> ><br>
+    Titulo:<input name="newtitulo" type="text" placeholder=<?php echo $user['titulo'];?> /><br>
     Descripcio:<input name="newdescripcion" type="text" placeholder=<?php echo $user['descripcion'];?>><br>
     Estado:<input name="newestado" type="text" placeholder=<?php echo $user['estado'];?>><br>
     Hora de inicio:<input name="newhora_inicio" type="text" placeholder=<?php echo $user['hora_inicio'];?>><br>
@@ -15,14 +16,16 @@
     <input type="submit" value="Enviar">
     </form>
     <form action="/web/deleteuser" method="POST">
-    </select><br>
+
     <input type="submit" value="Delete user">
-  </body>
+  </body> 
+-->
 
   <body class="bg-gray-100">
     <section>
         <div class="max-w-2xl mx-auto my-16 bg-white px-10 py-5">
             <h1 class="text-xl font-medium text-gray-900 dark:text-white py-5">Crear tarea</h1>
+            
 
             <form action="/web/taskedit" method="POST">
             <div  class="mb-6">
