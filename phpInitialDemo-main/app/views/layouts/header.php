@@ -42,5 +42,3 @@
             </div>
         </nav>
     </header>
-
-    div
