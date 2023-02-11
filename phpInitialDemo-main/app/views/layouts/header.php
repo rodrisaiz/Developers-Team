@@ -32,13 +32,7 @@
                         </li>
 
                     </ul>
-                    
                 </div>
-                <table>
-                    <tr>
-                        
-                    </tr>
-                </table>
             </div>
         </nav>
-    </header>
+</header>
