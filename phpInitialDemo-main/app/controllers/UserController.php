@@ -23,7 +23,7 @@ class UserController extends ApplicationController
 
 
 		$modify = new UserModify();
-		$modify->UserModify($id_user, $name , $surname, $userName, $email, $pw, $task);
+		$modify->updateUser($id_user, $name , $surname, $userName, $email, $pw, $task);
 
 
 	}

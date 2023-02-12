@@ -33,7 +33,7 @@ class UserModify extends DB
 
 
 
-        function UserModify($id_user, $name, $surname, $userName, $email, $pw, $tareas)
+        function updateUser($id_user, $name, $surname, $userName, $email, $pw, $tareas)
         {   
             $this->session();
             $this->assign();
