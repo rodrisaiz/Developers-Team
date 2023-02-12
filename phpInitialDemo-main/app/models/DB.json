@@ -41,6 +41,13 @@
                 "estado": "En curso",
                 "hora_inicio": "2023-02-12",
                 "hora_fin": "2023-02-24"
+            },
+            {
+                "titulo": "asasda",
+                "descripcion": "asdasdasd",
+                "estado": "Nueva",
+                "hora_inicio": "2023-02-12",
+                "hora_fin": "2023-02-25"
             }
         ]
     },
