@@ -39,14 +39,14 @@ class TaskController extends ApplicationController
 	public function editAction()
 	{
 
-		$this->titulo = $_POST['newtitulo'];
-		$this->descripcion = $_POST['newdescripcion'];
-		$this->estado = $_POST['newestado'];
-		$this->hora_inicio = $_POST['newhora_inicio'];
-		$this->hora_fin = $_POST['newhora_fin'];
+		$titulo = $_POST['newtitulo'];
+		$descripcion = $_POST['newdescripcion'];
+		$estado = $_POST['newestado'];
+		$hora_inicio = $_POST['newhora_inicio'];
+		$hora_fin = $_POST['newhora_fin'];
 		
-        $taskup = new Taskup();
-        $taskup->edit($this->titulo, $this->descripcion, $this->estado, $this->hora_inicio, $this->hora_fin);
+        $taskedit = new TaskEdit();
+        $taskedit->edit($titulo, $descripcion, $estado, $hora_inicio, $hora_fin);
 		
 	}
 

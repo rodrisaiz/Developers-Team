@@ -4,25 +4,6 @@
   $user = $this->_user;
 
 ?>
-
-
-  
-  <!-- <body>
-    <form action="/web/modifyuser" method="POST">
-    Name:<input name="newname" type="text" placeholder=<?php echo $user['name'];?> ><br>
-    Surname<input name="newsurname" type="text" placeholder=<?php echo $user['surname'];?>><br>
-    User name:<input name="newusername" type="text" placeholder=<?php echo $user['userName'];?>><br>
-    E-mail:<input name="newemail" type="text" placeholder=<?php echo $user['email'];?>><br>
-    Password:<input name="newpasword" type="password" placeholder=<?php echo $user['pw'];?>><br>
-  
-    </select><br>
-    <input type="submit" value="Enviar">
-    </form>
-    <form action="/web/deleteuser" method="POST">
-    </select><br>
-    <input type="submit" value="Delete user">
-  </body> -->
-
   <body class="bg-gray-100">
     <section>
         <div class="max-w-2xl mx-auto my-16 bg-white px-10 py-5">
@@ -33,14 +14,14 @@
                     <div>
                         <label for="name"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
-                        <input type="text" id="name" name="name"
+                        <input type="text" id="name" name="newname"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="<?php echo $user['name'];?>">
                     </div>
                     <div>
                         <label for="surname"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Surname</label>
-                        <input type="text" id="surname" name="surname"
+                        <input type="text" id="surname" name="newsurname"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="<?php echo $user['surname'];?>">
                     </div>
@@ -48,21 +29,21 @@
                 <div class="mb-6">
                     <label for="userName"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Username</label>
-                    <input type="text" id="userName" name="userName"
+                    <input type="text" id="userName" name="newusername"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="<?php echo $user['userName'];?>">
                 </div>
                 <div class="mb-6">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
                         address</label>
-                    <input type="email" id="email" name="email"
+                    <input type="email" id="email" name="newemail"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="<?php echo $user['email'];?>">
                 </div>
                 <div class="mb-6">
                     <label for="password"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password</label>
-                    <input type="password" id="password" name="pw"
+                    <input type="password" id="password" name="newpasword"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="<?php echo $user['pw'];?>">
                 </div>
