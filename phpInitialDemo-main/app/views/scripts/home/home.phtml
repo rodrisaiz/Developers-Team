@@ -36,7 +36,7 @@
                 Fecha fin
               </th>
               <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                #
+                
               </th>
 
             </tr>
@@ -46,10 +46,8 @@
                 <?php  
                 for ($i = 0; $i <= ($countTask -1); $i++) {
                   $contador = $i;
-                ?>
-                
+                ?> 
           <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-          <?php $contador2 = $contador;?> 
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">
               <?php  echo $task[$i]["titulo"]; ?>  
               </td>
@@ -66,11 +64,8 @@
               <?php  echo $task[$i]["hora_fin"]; ?>  
               </td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-left">
-              <a href="/web/tasklist" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+              <a href="/web/taskedithome?item=<?php echo $contador?>" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
                 Edit
-                <?php   echo $contador2;
-                        $_SESSION["taskPosition"] = $contador2; 
-                ?>
               </a>  
               </td>
             </tr>

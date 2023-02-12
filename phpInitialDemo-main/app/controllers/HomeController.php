@@ -4,6 +4,9 @@ class HomeController extends ApplicationController
 {
 	public function homeAction()
 	{
+
+		$object = new Home;
+		$this->view->_data = $object->homeAction();
 		
 	}
 	

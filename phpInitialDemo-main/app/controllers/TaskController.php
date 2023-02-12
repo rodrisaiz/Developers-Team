@@ -47,12 +47,9 @@ class TaskController extends ApplicationController
 		
         $taskup = new Taskup();
         $taskup->edit($this->titulo, $this->descripcion, $this->estado, $this->hora_inicio, $this->hora_fin);
-
-
-
-
 		
 	}
+
 
 
 	

@@ -21,10 +21,12 @@ $routes = array(
 	'/taskhome' => 'task#index',
 	'/taskedithome' => 'task#edithome',
 	'/taskedit' => 'task#edit',
+	'/taskdelete' => 'task#delete',
 	'/user' => 'user#index',
 	'/modifyuser' => 'user#userModify',
 	'/deleteuser' => 'user#delete',
 	'/deleteuser' => 'user#delete',
+	
 	
 
 // the following are just test

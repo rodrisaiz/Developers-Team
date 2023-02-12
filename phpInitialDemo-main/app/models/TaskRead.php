@@ -20,7 +20,7 @@ class TaskRead extends DB{
     public function sessionTask()
     {
 
-        $this->taskPosition =  $_SESSION["taskPosition"];
+        $this->taskPosition =  $_GET['item'];
 
     }
 
