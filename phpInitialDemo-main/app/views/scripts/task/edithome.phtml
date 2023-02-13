@@ -6,21 +6,21 @@ $user = $this->_task;
 
 <section>
     <div class="max-w-2xl mx-auto my-16 bg-white px-10 py-5">
-        <h1 class="text-xl font-medium text-gray-900 dark:text-white py-5">Modificar tarea</h1>
+        <h1 class="text-xl font-medium text-gray-900 dark:text-white py-5">Modify task</h1>
 
 
         <form action="/web/taskedit" method="POST">
             <div class="mb-6">
             
                 <label for="titulo"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Título</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Title</label>
                 <input type="text" id="titulo" name="newtitulo"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="<?php echo $user['titulo']; ?>"></input>
             </div>
             <div>
                 <label for="descripcion"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Descripción</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Description</label>
                 <textarea type="textarea" id="descripcion" name="newdescripcion"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="<?php echo $user['descripcion']; ?>"></textarea>
@@ -32,21 +32,20 @@ $user = $this->_task;
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option value="<?php echo $user['estado']; ?>" selected><?php echo $user['estado']; ?></option>
-                    <option value="nueva">Nueva</option>
-                    <option value="en_curso">En curso</option>
-                    <option value="finalizada">Finalizada</option>
+                    <option value="New" selected>New</option>
+                    <option value="In progress">In progress</option>
+                    <option value="Finished">Finished</option>
                 </select>
             </div>
             <div class="mb-6">
                 <label for="newhora_inicio"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de inicio</label>
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Start date</label>
                 <input type="datetime" id="hora_inicio" name="newhora_inicio"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="<?php echo $user['hora_inicio']; ?>"></input>
             </div>
             <div class="mb-6">
-                <label for="hora_fin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fecha de
-                    fin</label>
+                <label for="hora_fin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ending date</label>
                 <input type="datetime" id="hora_fin" name="newhora_fin"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="<?php echo $user['hora_fin']; ?>"></input>
@@ -63,7 +62,7 @@ $user = $this->_task;
         </form> -->
 
         <div class="text-sm font-medium text-gray-500 dark:text-gray-300 py-5 text-right">
-            <a href="/web/home" class="text-blue-700 hover:underline dark:text-blue-500">Volver al listado de tareas</a>
+            <a href="/web/home" class="text-blue-700 hover:underline dark:text-blue-500">Back to task list</a>
         </div>
     </div>
 
