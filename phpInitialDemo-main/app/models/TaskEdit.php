@@ -11,7 +11,7 @@ class TaskEdit extends DB
     public $hora_inicio;
     public $hora_fin;
     public $gatetask = 0;
-    public $contadortask;
+    public $taskPosition;
     public $tareas = array();
 
 
@@ -22,21 +22,25 @@ class TaskEdit extends DB
 
     }
 
-    function taskcount()
+    public function sessionTask()
     {
 
-        $this->contadortask = $_GET["item"];
+        $this->taskPosition = $_SESSION["counttask"];
+
     }
 
 
     function edit($titulo, $descripcion, $estado, $hora_inicio, $hora_fin)
     {
         $this->session();
-        $this->taskcount();
+        $this->sessionTask();
        
         $decoded_json = $this->read();
         
-        
+        //$posicionFinalTarea = $this->contadortask ;
+
+        //echo $this->contadortask ;
+
         $tarea = array(
             'titulo' => $titulo,
             'descripcion' => $descripcion,
@@ -45,7 +49,36 @@ class TaskEdit extends DB
             'hora_fin' => $hora_fin,
         );
 
-        $decoded_json[$this->userPosition]['tareas'][$this->contadortask] = $tarea;
+        $decoded_json[$this->userPosition]['tareas'][$this->taskPosition] = $tarea;
+        //$decoded_json[$this->userPosition]['tareas'][3] = $tarea;
+        //$this->read()[$this->userPosition]['tareas'][$this->taskPosition]
+
+        $write = $this->write($decoded_json);
+        
+        header('Location:/web/home');
+
+        
+
+        /*
+
+        function addTask($titulo, $descripcion, $estado, $hora_inicio, $hora_fin)
+    {
+
+        $this->session();
+       
+        $decoded_json = $this->read();
+        
+        $posicionFinalTarea = count($decoded_json[$this->userPosition]['tareas']);
+
+        $tarea = array(
+            'titulo' => $titulo,
+            'descripcion' => $descripcion,
+            'estado' => $estado,
+            'hora_inicio' => $hora_inicio,
+            'hora_fin' => $hora_fin,
+        );
+
+        $decoded_json[$this->userPosition]['tareas'][$posicionFinalTarea] = $tarea;
 
         $write = $this->write($decoded_json);
         
@@ -53,6 +86,11 @@ class TaskEdit extends DB
 
     }
 
+        */
+
+    }
+   
 }
 
 ?>
+

@@ -15,39 +15,11 @@
                 "hora_fin": "2023-01-15"
             },
             {
-                "titulo": "<xzx<xsadas",
-                "descripcion": "dasfsfdfdfsfs",
-                "estado": "En curso",
-                "hora_inicio": "2023-02-10",
-                "hora_fin": "2023-02-25"
-            },
-            {
-                "titulo": "cascsd",
-                "descripcion": "sdcsdcsdc",
-                "estado": "En curso",
-                "hora_inicio": "2023-02-12",
-                "hora_fin": "2023-02-17"
-            },
-            {
-                "titulo": "cvcbfg f",
-                "descripcion": "gfgfghb",
-                "estado": "En curso",
-                "hora_inicio": "2023-02-12",
-                "hora_fin": "2023-02-23"
-            },
-            {
-                "titulo": "dsfsdfs",
-                "descripcion": "fdsfdsdf",
-                "estado": "En curso",
-                "hora_inicio": "2023-02-12",
-                "hora_fin": "2023-02-24"
-            },
-            {
-                "titulo": "dsdf",
-                "descripcion": "sdfsdfsf",
+                "titulo": "Prueba task",
+                "descripcion": "esto es una prueba",
                 "estado": "Nueva",
-                "hora_inicio": "2023-02-17",
-                "hora_fin": "2023-02-28"
+                "hora_inicio": "2023-02-13",
+                "hora_fin": "2023-02-25"
             }
         ]
     },

@@ -21,6 +21,7 @@ class TaskRead extends DB{
     {
 
         $this->taskPosition =  $_GET['item'];
+        $_SESSION["counttask"] = $this->taskPosition;
 
     }
 
