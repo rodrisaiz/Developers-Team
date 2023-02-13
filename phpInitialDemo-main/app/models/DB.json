@@ -1,10 +1,10 @@
 [
     {
         "id_user": 1,
-        "name": "Susana",
-        "surname": "Gil",
+        "name": "sgil",
+        "surname": "",
         "userName": "sgil",
-        "email": "susanagilcastro@gmail.com",
+        "email": "",
         "pw": "1111",
         "tareas": [
             {
@@ -20,6 +20,13 @@
                 "estado": "Nueva",
                 "hora_inicio": "2023-02-13",
                 "hora_fin": "2023-02-25"
+            },
+            {
+                "titulo": "swdsad",
+                "descripcion": "asdasd",
+                "estado": "Nueva",
+                "hora_inicio": "2023-02-15",
+                "hora_fin": "2023-02-10"
             }
         ]
     },
