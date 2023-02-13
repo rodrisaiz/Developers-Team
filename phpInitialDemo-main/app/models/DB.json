@@ -20,20 +20,6 @@
                 "estado": "New",
                 "hora_inicio": "2023-02-13",
                 "hora_fin": "2023-02-25"
-            },
-            {
-                "titulo": "swdsad",
-                "descripcion": "asdasd",
-                "estado": "New",
-                "hora_inicio": "2023-02-15",
-                "hora_fin": "2023-02-10"
-            },
-            {
-                "titulo": "sdfsdfsdf",
-                "descripcion": "sadasfsaf",
-                "estado": "New",
-                "hora_inicio": "2023-02-15",
-                "hora_fin": "2023-02-17"
             }
         ]
     },
@@ -112,42 +98,6 @@
         "userName": "rodrisaiz@email.com",
         "email": "rodrisaiz@email.com",
         "pw": "6666",
-        "tareas": []
-    },
-    {
-        "id_user": 9,
-        "name": "asdas",
-        "surname": "asdad",
-        "userName": "dcfgdg",
-        "email": "dffgbfg",
-        "pw": "1234",
-        "tareas": []
-    },
-    {
-        "id_user": 10,
-        "name": "Pepito",
-        "surname": "Grillo",
-        "userName": "pepitogrillo",
-        "email": "pgrillo@email.com",
-        "pw": "1234",
-        "tareas": []
-    },
-    {
-        "id_user": 11,
-        "name": "scadasd",
-        "surname": "dsd",
-        "userName": "asdsd",
-        "email": "sfds@asdas.vv",
-        "pw": "1234",
-        "tareas": []
-    },
-    {
-        "id_user": 13,
-        "name": "",
-        "surname": "",
-        "userName": "",
-        "email": "",
-        "pw": "",
         "tareas": []
     }
 ]
