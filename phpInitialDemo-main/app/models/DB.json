@@ -1,0 +1,103 @@
+[
+    {
+        "id_user": 1,
+        "name": "sgil",
+        "surname": "",
+        "userName": "sgil",
+        "email": "",
+        "pw": "1111",
+        "tareas": [
+            {
+                "titulo": "Mirar apuntes php",
+                "descripcion": "",
+                "estado": "In progress",
+                "hora_inicio": "2023-01-11",
+                "hora_fin": "2023-01-15"
+            },
+            {
+                "titulo": "Prueba task",
+                "descripcion": "esto es una prueba",
+                "estado": "New",
+                "hora_inicio": "2023-02-13",
+                "hora_fin": "2023-02-25"
+            }
+        ]
+    },
+    {
+        "id_user": 2,
+        "name": "Nombre",
+        "surname": "Apellido",
+        "userName": "usuario",
+        "email": "email@email.com",
+        "pw": "2222",
+        "tareas": [
+            {
+                "titulo": "Beber agua",
+                "descripcion": "",
+                "estado": "In progress",
+                "hora_inicio": "2023-01-11",
+                "hora_fin": "2023-01-18"
+            },
+            {
+                "titulo": "Bailar chachacha",
+                "descripcion": "",
+                "estado": "Finished",
+                "hora_inicio": "2023-01-17",
+                "hora_fin": "2023-02-11"
+            }
+        ]
+    },
+    {
+        "id_user": 4,
+        "name": "dsfsd",
+        "surname": "asdsdfsdfsdf",
+        "userName": "asddsfssdfscd",
+        "email": "vc zxczxdfsdggzx",
+        "pw": "zxccx",
+        "tareas": []
+    },
+    {
+        "id_user": 5,
+        "name": "dsfsd",
+        "surname": "asdsdfsdfsdf",
+        "userName": "asddsfssdfscd",
+        "email": "vc zxczxdfsdggzx",
+        "pw": "zxccx",
+        "tareas": []
+    },
+    {
+        "id_user": 6,
+        "name": "dsfsd",
+        "surname": "asdsdfsdfsdf",
+        "userName": "asddsfssdfscd",
+        "email": "vc zxczxdfsdggzx",
+        "pw": "zxccx",
+        "tareas": [
+            {
+                "titulo": "sdfdsf",
+                "descripcion": "sdfsdf",
+                "estado": "In progress",
+                "hora_inicio": "2023-03-03",
+                "hora_fin": "2023-02-17"
+            }
+        ]
+    },
+    {
+        "id_user": 7,
+        "name": "dsfsd",
+        "surname": "asdsdfsdfsdf",
+        "userName": "asddsfssdfscd",
+        "email": "vc zxczxdfsdggzx",
+        "pw": "zxccx",
+        "tareas": []
+    },
+    {
+        "id_user": 8,
+        "name": "Rodri",
+        "surname": "Saiz",
+        "userName": "rodrisaiz@email.com",
+        "email": "rodrisaiz@email.com",
+        "pw": "6666",
+        "tareas": []
+    }
+]
