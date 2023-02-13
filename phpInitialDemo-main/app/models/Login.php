@@ -1,13 +1,8 @@
 <?php
-//require("DB.class.php");
 
 class Login extends DB{
  
-   
-
-        //public $username = $_POST["user"]
         
-
         public $username;
         public $pw;
         
@@ -97,6 +92,14 @@ class Login extends DB{
 
             }
 
+            public function sessionStart(){
+
+                session_start();
+
+                $_SESSION["userPosition"] = $this->contador;
+
+            }
+
 
             public function LoginAction(){
 
@@ -113,6 +116,7 @@ class Login extends DB{
                         $this->result = header('Location:/web/signuphome');
                     
                     }
+                    $this->sessionStart();
 
                     return $this->result;
                 
